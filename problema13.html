@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema13</title>
+    <script>
+        function alumnos(){
+    let total_alumnos = parseInt(prompt('Ingrese numero de alumnos'));
+    let notas_alumnos=[]
+    let aprobados=0
+    let desaprobados =0
+    for (let i=0;i<total_alumnos;i++){
+        notas_alumnos[i]=parseInt(prompt('Ingrese nota de alumno $i+1'));
+        if(notas_alumnos[i]<11){
+            desaprobados =desaprobados +1
+        }else{
+            aprobados=aprobados+1
+        }
+    }
+    return console.log('El total de aprobados es de $aprobados y desaprobados es de $desaprobados')
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
